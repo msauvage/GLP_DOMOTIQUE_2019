@@ -14,13 +14,13 @@ public class Aspirateur {
 	
 	public void programmerLavage () {
 		Scanner sc= new Scanner (System.in);
-		System.out.println("Entrer l'heure souhait�e ");
+		System.out.println("Entrer l'Heure souhaitée ");
 		int hc = sc.nextInt();
 		heurep.setHeure(hc);
-		System.out.println("Entrer la minute souhait�e ");
+		System.out.println("Entrer la Minute souhaitée ");
 		int minc= sc.nextInt();
 		heurep.setMinute(minc);
-		System.out.println("Entrer la seconde souhait�e ");
+		System.out.println("Entrer la Seconde souhaitée ");
 		int secc= sc.nextInt();
 		heurep.setSeconde(secc);
 	}
