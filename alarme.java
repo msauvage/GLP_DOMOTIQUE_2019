@@ -11,24 +11,24 @@ public class Alarme {
 	}
 	public String Activer() {
 		if (this.etat) {
-			return"L'alarme est d�j� activ�e";
+			return"L'alarme est déjà Activée";
 		}
 		else {
 			etat=true;
-			return"L'alarme � �t� activ�e";
+			return"L'alarme a été Activée";
 		}
 	}
 	
 	public String Desactiver(String codeT) {
 		if (this.etat && VerifCode(codeT)) {			
 			etat=false;
-			return"L'alarme a �t� d�sactiv�e";
+			return"L'alarme a été Désactivée";
 		}
 		else if(!VerifCode(codeT) && etat==true) {
 			return"Mauvais Code";
 		}
 		else {
-			return "l'alarme est deja desactiv�e";
+			return "l'alarme est dejà Désactivée";
 		}
 	}
 	
@@ -43,10 +43,10 @@ public class Alarme {
 	
 	public String getEtat() {
 		if(this.etat==true) {
-			return "l'alarme est activ�e";
+			return "l'alarme est Activée";
 		}
 		else {
-			return "l'alarme est d�sactiv�e";
+			return "l'alarme est Désactivée";
 		}
 	}
 	
